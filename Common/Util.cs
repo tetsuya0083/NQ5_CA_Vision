@@ -5,7 +5,6 @@ using System.Text;
 using System.IO;
 using System.Globalization;
 using System.Runtime.InteropServices;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Diagnostics;
@@ -14,7 +13,6 @@ using System.Net.Sockets;
 using System.Drawing;
 using System.Reflection;
 using System.Data;
-using System.Web;
 using System.Windows.Forms;
 
 namespace Common
@@ -327,7 +325,8 @@ namespace Common
         {
             return /*"Provider=SQLOLEDB.1;*/"Password=" + password +
                     ";Persist Security Info=True;User ID=" + id +
-                    ";Initial Catalog=" + catalog + ";Data Source=" + ip;
+                    ";Initial Catalog=" + catalog + ";Data Source=" + ip +
+                    ";Encrypt=false;TrustServerCertificate=true";
         }
 
         public static string GetWorkingDirectory()
@@ -409,7 +408,7 @@ namespace Common
                 {
                     myFileStream = new FileStream(sLogFile, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
                     myFileStream.Seek(0, SeekOrigin.End);
-                    myFileStream.Write(Encoding.Default.GetBytes(sContents), 0, Encoding.Default.GetByteCount(sContents));
+                    myFileStream.Write(Encoding.UTF8.GetBytes(sContents), 0, Encoding.UTF8.GetByteCount(sContents));
                 }
                 finally
                 {
@@ -923,7 +922,7 @@ namespace Common
 
         public static string RemoveNull(byte[] p)
         {
-            string s = Encoding.Default.GetString(p);
+            string s = Encoding.UTF8.GetString(p);
             char[] trims = { '\r', '\n', '\0' };
             s = s.Trim(trims);
             return s;

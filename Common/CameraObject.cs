@@ -74,7 +74,7 @@ namespace KEYENCE
                 var buffsize = Client.ReceiveBufferSize;
                 byte[] instream = new byte[buffsize];
                 Stream.Read(instream, 0, buffsize);
-                string data = Encoding.Default.GetString(instream);
+                string data = Encoding.UTF8.GetString(instream);
                 //owner.Logging("CAM" + ID.ToString() + " Data Received: " + data);
                 return data;
             }

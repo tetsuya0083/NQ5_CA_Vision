@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs cat:*)",
+      "Bash(dotnet:*)",
+      "Bash(ls \"/c/Work/yongsan/yongsan NX5/src_CA/NQ5_VisionInspection/exe/\"*XGComm*)",
+      "Bash(ls \"/c/Work/yongsan/yongsan NX5/src_CA/NQ5_VisionInspection/exe/\"*Interop*)",
+      "Bash(ls -la \"/c/Work/yongsan/yongsan NX5/src_CA/NQ5_VisionInspection/exe-net8/\"*.dll \"/c/Work/yongsan/yongsan NX5/src_CA/NQ5_VisionInspection/exe-net8/\"*.exe)",
+      "Bash(ls:*)"
+    ]
+  }
+}

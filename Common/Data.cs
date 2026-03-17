@@ -5,7 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
@@ -32,7 +32,8 @@ namespace YONGSAN_CPAD_VISION
             string catalog = Util.GetIniFileString(ini, "Server", "Initial Catalog", "");
 
             return "Password=" + pass + ";Persist Security Info=True;" +
-                "User ID=" + user + ";Initial Catalog=" + catalog + ";Data Source=" + dataSource + ";Connection Timeout=5";
+                "User ID=" + user + ";Initial Catalog=" + catalog + ";Data Source=" + dataSource +
+                ";Encrypt=false;TrustServerCertificate=true;Connection Timeout=5";
         }
     }
 
@@ -542,7 +543,7 @@ namespace YONGSAN_CPAD_VISION
             {
                 myFileStream = new FileStream(sLogFile, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite);
                 myFileStream.Seek(0, SeekOrigin.End);
-                myFileStream.Write(Encoding.Default.GetBytes(contents), 0, Encoding.Default.GetByteCount(contents));
+                myFileStream.Write(Encoding.UTF8.GetBytes(contents), 0, Encoding.UTF8.GetByteCount(contents));
             }
             finally
             {
