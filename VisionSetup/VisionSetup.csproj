@@ -5,6 +5,8 @@
     <RootNamespace>VisionSetup</RootNamespace>
     <AssemblyName>VisionSetup</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationDefaultFont>Microsoft Sans Serif, 8.25pt</ApplicationDefaultFont>
+    <ApplicationHighDpiMode>DpiUnaware</ApplicationHighDpiMode>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PlatformTarget>x64</PlatformTarget>
     <ApplicationIcon>TP Setup.ico</ApplicationIcon>

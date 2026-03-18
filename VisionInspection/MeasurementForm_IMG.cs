@@ -328,6 +328,7 @@ namespace VisionInspection
 
             formSimulator.Show();
             formSimulator.WindowState = FormWindowState.Normal;
+            formSimulator.ClientSize = new System.Drawing.Size(763, 984);
         }
     }
 }

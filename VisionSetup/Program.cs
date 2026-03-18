@@ -2,6 +2,7 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Drawing;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using System.Collections.Generic;
@@ -35,8 +36,10 @@ namespace VisionSetup
         [STAThread]
         static void Main()
         {
+            Application.SetHighDpiMode(HighDpiMode.DpiUnaware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetDefaultFont(new Font("Microsoft Sans Serif", 8.25f));
             ////////////////////////////////////////////////////////////////
             // 중복 실행 방지를 위해 기존 코드는 주석처리
             /*
