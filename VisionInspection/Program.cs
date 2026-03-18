@@ -8,7 +8,6 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace VisionInspection
@@ -38,10 +37,8 @@ namespace VisionInspection
         [STAThread]
         static void Main()
         {
-            Application.SetHighDpiMode(HighDpiMode.DpiUnaware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.SetDefaultFont(new Font("Microsoft Sans Serif", 8.25f));
             ////////////////////////////////////////////////////////////////
             // 중복 실행 방지를 위해 기존 코드는 주석처리
             /*

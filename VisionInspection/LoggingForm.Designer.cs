@@ -44,7 +44,7 @@ namespace VisionInspection
             // LoggingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 427);
             this.Controls.Add(this.list);
             this.Name = "LoggingForm";

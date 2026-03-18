@@ -50,9 +50,6 @@ namespace VisionInspection
             this.listModel.GridLines = true;
             this.listModel.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listModel.HideSelection = false;
-            this.listModel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.listModel.Location = new System.Drawing.Point(12, 98);
             this.listModel.MultiSelect = false;
             this.listModel.Name = "listModel";
@@ -73,8 +70,6 @@ namespace VisionInspection
             // 
             // btnSendModel
             // 
-            this.btnSendModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSendModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSendModel.Location = new System.Drawing.Point(169, 909);
             this.btnSendModel.Name = "btnSendModel";
@@ -124,7 +119,6 @@ namespace VisionInspection
             // 
             // btnReload
             // 
-            this.btnReload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnReload.Location = new System.Drawing.Point(12, 909);
             this.btnReload.Name = "btnReload";
@@ -137,7 +131,7 @@ namespace VisionInspection
             // SimulatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(763, 984);
             this.Controls.Add(this.btnReload);

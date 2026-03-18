@@ -87,7 +87,6 @@ namespace VisionInspection
 
             formSimulator.Show();
             formSimulator.WindowState = FormWindowState.Normal;
-            formSimulator.ClientSize = new System.Drawing.Size(763, 984);
         }
 
         private void lblPLC_MouseDown(object sender, MouseEventArgs e)

@@ -1074,7 +1074,7 @@ namespace VisionSetup
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 771);
             this.Controls.Add(this.btnChangeEquipCode);
             this.Controls.Add(this.groupBox10);
